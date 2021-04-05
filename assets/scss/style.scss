@@ -357,6 +357,7 @@ a {
 
     .corona-2 {
         margin-top: 100px;
+
         .container {
             flex-direction: column;
 
@@ -375,9 +376,11 @@ a {
                 width: 65%;
                 margin-top: 18px;
             }
+
             background-image: url("../img/virus_3.png");
             background-repeat: no-repeat;
             background-position: bottom 20px left;
+
             .corona-list {
                 display: flex;
                 justify-content: center;
@@ -385,6 +388,7 @@ a {
                 margin-bottom: 140px;
                 justify-content: space-around;
                 padding: 0 30px;
+
                 .corona-itm {
                     width: 30%;
                     background: #FFFFFF;
@@ -397,10 +401,12 @@ a {
                     flex-direction: column;
                     align-items: center;
                     transition: all .5s;
-                    img{
-                        width: 270px;
+
+                    img {
+                        width: 230px;
                         height: auto;
                     }
+
                     strong {
                         font-family: Gelion;
                         font-style: normal;
@@ -412,13 +418,16 @@ a {
                         margin-top: 40px;
                         margin-bottom: 12px;
                     }
-                    .minus-m{
+
+                    .minus-m {
                         margin-top: -40px;
                     }
-                    .minus-m2{
+
+                    .minus-m2 {
                         margin-top: -20px;
                     }
-                    p{
+
+                    p {
                         @include texts;
                         font-size: 15px;
                         width: 100%;
@@ -436,27 +445,134 @@ a {
     }
 }
 
-.symptoms{
-    .container{
+.symptoms {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
+
+        img {
             width: 90%;
             height: auto;
         }
-        .symptoms-subtitle{
+
+        .symptoms-subtitle {
             @include subtitles;
             text-align: center;
         }
-        .symptoms-title{
+
+        .symptoms-title {
             @include titles;
             text-align: center;
         }
-        .symptoms-text{
+
+        .symptoms-text {
             @include texts;
             text-align: center;
             width: 76%;
         }
+    }
+}
+
+.should {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .subtitle-should {
+            @include subtitles;
+            text-align: center;
+        }
+
+        .should-title {
+            @include titles;
+            text-align: center;
+        }
+
+        .should-text {
+            @include texts;
+            text-align: center;
+            width: 70%;
+            margin-top: 18px;
+        }
+
+        .should-list {
+            .should-itm {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                }
+                .should-right {
+                    width: 49%;
+                    display: flex;
+                    .should-number {
+                        font-family: 'Gelion';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 44px;
+                        line-height: 145%;
+                        text-transform: capitalize;
+                        color: #FA5652;
+                        padding: 10px;
+                        background: rgba(250, 86, 82, 0.15);
+                        border-radius: 50%;
+                        margin-right: 35px;
+                        display: inline-block;
+                        height: auto;
+                    }
+                    .span__{
+                        .should-number {
+                            font-family: 'Gelion';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 44px;
+                            line-height: 145%;
+                            text-transform: capitalize;
+                            color: #FA5652;
+                            padding: 10px 15px;
+                            background: rgba(250, 86, 82, 0.15);
+                            border-radius: 50%;
+                            margin-right: 35px;
+                            display: inline-block;
+                            height: auto;
+                        }
+                        .should-number:first-child{
+                            padding: 10px 19px;
+                        }
+                        .should-number:nth-child(3){
+                            padding: 10px;
+                        }
+                    }
+
+                    .should-right-bottom {
+                        .should-strong {
+                            font-family: 'Gelion';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 47px;
+                            line-height: 147%;
+                            text-transform: capitalize;
+                            color: #035755;
+                            margin-bottom: 15px;
+                        }
+
+                        .should-itm-text {
+                            @include texts;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .girl-img {
+                    width: 50%;
+                    height: auto;
+                }
+
+            }
+        }
+
     }
 }
